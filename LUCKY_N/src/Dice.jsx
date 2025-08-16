@@ -1,10 +1,13 @@
 import Die from "./Die";
+import "./Dice.css"
 
-export default function Dice({val}) {
+export default function Dice({dice}) {
     return (
-        <div>
-            <Die v={val}/>
-        </div>
+        <section className="Dice">
+           {dice.map((v, i) => (
+            <Die key={i} val={v}/>
+           ))}
+        </section>
     );
 
 }

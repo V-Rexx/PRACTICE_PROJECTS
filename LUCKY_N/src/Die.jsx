@@ -1,6 +1,6 @@
 import "./Die.css"
 
-export default function Die({v}) {
-    return <div className="Die">{v}</div>;
+export default function Die({val}) {
+    return <div className="Die">{val}</div>;
 }
 
